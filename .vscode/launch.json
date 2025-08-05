@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Temp",
+            "request": "launch",
+            "mainClass": "JobApp.firstjobapp.Temp",
+            "projectName": "firstjobapp"
+        },
+        {
+            "type": "java",
+            "name": "ReverseStr",
+            "request": "launch",
+            "mainClass": "JobApp.firstjobapp.ReverseStr",
+            "projectName": "firstjobapp"
+        },
+        {
+            "type": "java",
+            "name": "BubbleSort",
+            "request": "launch",
+            "mainClass": "JobApp.firstjobapp.BubbleSort",
+            "projectName": "firstjobapp"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-FirstjobappApplication<firstjobapp>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "JobApp.firstjobapp.FirstjobappApplication",
+            "projectName": "firstjobapp",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
