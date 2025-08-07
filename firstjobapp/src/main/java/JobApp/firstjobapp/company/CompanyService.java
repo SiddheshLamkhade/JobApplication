@@ -2,16 +2,10 @@ package JobApp.firstjobapp.company;
 
 import java.util.List;
 
-import JobApp.firstjobapp.job.Job;
-import jakarta.persistence.OneToMany;
-
-public class CompanyService {
-    private long id;
-    private String name;
-    private String description;
-    @OneToMany 
-    private List<Job> jobs;
-
-    
-    
+import org.springframework.stereotype.Service;
+@Service
+public interface CompanyService {
+    List<Company> getAllCompanies();
+    boolean updateCompany(Company company, Long id);
+    void createCompany(Company company); 
 }
