@@ -10,7 +10,6 @@ import JobApp.firstjobapp.job.JobRepository;
 public class JobServiceImpl{
     //List<Job> jobs = new ArrayList<>();
     JobRepository jobrRepository;
-    private Long nextId=1L;
 
         
     public JobServiceImpl(JobRepository jobrRepository) {
@@ -25,7 +24,7 @@ public class JobServiceImpl{
 
    
     public void createJob(Job job) {
-        job.setId(nextId++);
+        // Remove the manual ID setting - let the database auto-generate it
         jobrRepository.save(job);
     }
 
