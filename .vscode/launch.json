@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BasicJava",
+            "request": "launch",
+            "mainClass": "JobApp.BasicJava.BasicJava",
+            "projectName": "firstjobapp"
+        },
+        {
+            "type": "java",
+            "name": "Temp",
+            "request": "launch",
+            "mainClass": "JobApp.temporary.Temp",
+            "projectName": "firstjobapp"
+        },
+        {
+            "type": "java",
             "name": "Temp",
             "request": "launch",
             "mainClass": "JobApp.firstjobapp.Temp",

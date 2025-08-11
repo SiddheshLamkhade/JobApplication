@@ -1,7 +1,9 @@
 package JobApp.firstjobapp.company;
 
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import JobApp.firstjobapp.job.Job;
+import JobApp.firstjobapp.review.Review;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,10 +16,13 @@ public class Company {
     private long id;
     private String name;
     private String description;
+
+    @JsonIgnore
     @OneToMany (mappedBy = "company")
     private List<Job> jobs;
+    @OneToMany (mappedBy = "company")
+    private List<Review> reviews;
 
-    // private List<review> reviews;
     public Company() {
     }
     
@@ -58,5 +63,13 @@ public class Company {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public List<Review> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(List<Review> reviews) {
+        this.reviews = reviews;
     }
 }

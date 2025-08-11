@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.server.CoWebFilter.Companion;
 
+import JobApp.firstjobapp.company.Company;
 import JobApp.firstjobapp.job.Impl.JobServiceImpl;
 import org.springframework.web.bind.annotation.PutMapping;
 
@@ -36,9 +38,10 @@ public class JobController {
 	}
 
 	@PostMapping
-	public String createJob(@RequestBody Job job) {
+	public ResponseEntity<String> createJob(@RequestBody Job job) {
 		jobService.createJob(job);
-		return "job added successfully";
+		//Company c=job.getCompany();
+		return new ResponseEntity<>("job added successfully",HttpStatus.CREATED);
 	}
 	@DeleteMapping("/{id}")
 	public ResponseEntity<String> deleteJob(@PathVariable Long id){
