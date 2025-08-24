@@ -1,10 +1,12 @@
 package com.jobms.job.Impl;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import com.jobms.job.Job;
 import com.jobms.job.JobRepository;
+import com.jobms.job.dto.JobWithCompanyDTO;
 import com.jobms.job.external.Company;
 
 @Service
@@ -12,26 +14,36 @@ public class JobServiceImpl{
     
     JobRepository jobRepository;
 
-        
     public JobServiceImpl(JobRepository jobRepository) {
         this.jobRepository = jobRepository;
     }
     
-    
-    public List<Job> findAll() {  
-        /*
-         * ============================================================
-         * |                    USECASE OF RESTTEMPLATE               |
-         * ============================================================
-         */
+    /*
+    * ============================================================
+    * |                    USECASE OF RESTTEMPLATE               |
+    * ============================================================
+    */    
+
+    public List<JobWithCompanyDTO> findAll() {  
+        List<Job> jobs=jobRepository.findAll();
+        List<JobWithCompanyDTO> jobWithCompanyDTOs=new ArrayList<>();
         RestTemplate restTemplate = new RestTemplate();  
-        Company company= restTemplate.getForObject("http://localhost:8081/companies/1", Company.class);  
+        for(Job job:jobs){
+            Company company = restTemplate
+            .getForObject("http://localhost:8081/companies/"+job.getCompanyId(), Company.class);  
+
+            JobWithCompanyDTO jobWithCompanyDTO=new JobWithCompanyDTO();
+            jobWithCompanyDTO.setJob(job);
+            jobWithCompanyDTO.setCompany(company);
+            jobWithCompanyDTOs.add(jobWithCompanyDTO);
+        }
+
+        //Company company= restTemplate.getForObject("http://localhost:8081/companies/1", Company.class);  
         //It converts the json response from  *the url* to *Company class object*
         // System.out.println(company.getName());
         // System.out.println(company.getDescription());
         // System.out.println(company.getId());
-
-        return jobRepository.findAll();
+        return jobWithCompanyDTOs;
     }
 
 
