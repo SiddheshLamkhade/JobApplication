@@ -2,6 +2,37 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ReviewmsApplication",
+            "request": "launch",
+            "mainClass": "com.reviewms.ReviewmsApplication"
+        },
+        {
+            "type": "java",
+            "name": "CompanymsApplication",
+            "request": "launch",
+            "mainClass": "com.companyms.CompanymsApplication"
+        },
+        {
+            "type": "java",
+            "name": "JobmsApplication",
+            "request": "launch",
+            "mainClass": "com.jobms.JobmsApplication"
+        },
+        {
+            "type": "java",
+            "name": "Temp",
+            "request": "launch",
+            "mainClass": "Temp"
+        },
+        {
+            "type": "java",
+            "name": "Temp",
+            "request": "launch",
+            "mainClass": "Temp",
+            "projectName": "firstjobapp"
+        },
+        {
+            "type": "java",
             "name": "BasicJava",
             "request": "launch",
             "mainClass": "JobApp.BasicJava.BasicJava",
@@ -42,6 +73,37 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "JobApp.firstjobapp.FirstjobappApplication",
             "projectName": "firstjobapp",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-JobmsApplication<jobms>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.jobms.JobmsApplication",
+            "projectName": "jobms",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CompanymsApplication<companyms>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.companyms.CompanymsApplication",
+            "projectName": "companyms",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=59510 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=companyms"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ReviewmsApplication<reviewms>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.reviewms.ReviewmsApplication",
+            "projectName": "reviewms",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
