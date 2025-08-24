@@ -1,9 +1,5 @@
 **Job Application**
 
-*
-* 
-*
-
 **Development Workflow**
 1. Built three module Company, Jobs, Reviews
 2. Added Database which is H2
