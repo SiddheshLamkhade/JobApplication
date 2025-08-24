@@ -30,7 +30,7 @@ public class JobServiceImpl{
         RestTemplate restTemplate = new RestTemplate();  
         for(Job job:jobs){
             Company company = restTemplate
-            .getForObject("http://localhost:8081/companies/"+job.getCompanyId(), Company.class);  
+            .getForObject("http://COMPANYMS:8081/companies/"+job.getCompanyId(), Company.class);  
 
             JobWithCompanyDTO jobWithCompanyDTO=new JobWithCompanyDTO();
             jobWithCompanyDTO.setJob(job);

@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ServiceRegApplication",
+            "request": "launch",
+            "mainClass": "com.service_reg.ServiceRegApplication"
+        },
+        {
+            "type": "java",
             "name": "ReviewmsApplication",
             "request": "launch",
             "mainClass": "com.reviewms.ReviewmsApplication"
@@ -84,7 +90,8 @@
             "mainClass": "com.jobms.JobmsApplication",
             "projectName": "jobms",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=62747 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=jobms"
         },
         {
             "type": "java",
@@ -104,6 +111,17 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.reviewms.ReviewmsApplication",
             "projectName": "reviewms",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=62748 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=reviewms"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceRegApplication<service-reg>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.service_reg.ServiceRegApplication",
+            "projectName": "service-reg",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
