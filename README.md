@@ -11,10 +11,10 @@ Job Application
 
 <img width="1148" height="613" alt="image" src="https://github.com/user-attachments/assets/3dc1ff98-4bdd-4194-9962-498836f72067" />
 
-/*
-         * ============================================================
-         * |                    USECASE OF RESTTEMPLATE               |
-         * ============================================================
-*/
+*
+* 
+*
+*
+*
 
 <img width="832" height="328" alt="image" src="https://github.com/user-attachments/assets/8247a5f0-5370-4b09-8d69-6828d4f5b2bf" />
