@@ -13,8 +13,13 @@ Job Application
 
 *
 * 
+* 
+
+<img width="832" height="328" alt="image" src="https://github.com/user-attachments/assets/8247a5f0-5370-4b09-8d69-6828d4f5b2bf" />
+
 *
 *
 *
 
-<img width="832" height="328" alt="image" src="https://github.com/user-attachments/assets/8247a5f0-5370-4b09-8d69-6828d4f5b2bf" />
+<img width="890" height="494" alt="image" src="https://github.com/user-attachments/assets/328437bc-1de0-4113-bab7-05aa08492360" />
+
