@@ -6,6 +6,7 @@
 3. Restructuring application to Microservices
 4. Used Docker for pgAdmin and for postgres database.
 5. Successfully used RestTemplate for interservice communication
+6. Successfully replaced RestTemplate with OpenFeign
 
 
 <img width="1018" height="532" alt="aycj7qut" src="https://github.com/user-attachments/assets/e9fba1de-549f-4e72-8c1c-2f325df36d16" />
