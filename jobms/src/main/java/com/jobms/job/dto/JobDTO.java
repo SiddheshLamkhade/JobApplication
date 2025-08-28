@@ -1,7 +1,7 @@
 package com.jobms.job.dto;
 import java.util.List;
 
-import com.jobms.job.Job;
+
 import com.jobms.job.external.Company;
 import com.jobms.job.external.Review;
 

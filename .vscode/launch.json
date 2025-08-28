@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ConfigserverApplication",
+            "request": "launch",
+            "mainClass": "com.configserver.ConfigserverApplication"
+        },
+        {
+            "type": "java",
             "name": "ServiceRegApplication",
             "request": "launch",
             "mainClass": "com.service_reg.ServiceRegApplication"
@@ -122,6 +128,17 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.service_reg.ServiceRegApplication",
             "projectName": "service-reg",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=59929 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=service-reg"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ConfigserverApplication<configserver>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.configserver.ConfigserverApplication",
+            "projectName": "configserver",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
