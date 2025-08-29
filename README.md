@@ -33,9 +33,6 @@
 *
 *
 *
-<img width="1308" height="443" alt="image" src="https://github.com/user-attachments/assets/8364d70f-bcae-4527-8520-e2c704aa9185" />
-*
-*
-*
-<img width="1274" height="309" alt="image" src="https://github.com/user-attachments/assets/8a91adc0-3b93-4357-9543-4eccc2df77b1" />
+<img width="1300" height="424" alt="image" src="https://github.com/user-attachments/assets/3e1ed250-f882-4935-8b30-b3eaa7a1e998" />
+
 
