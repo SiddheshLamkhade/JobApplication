@@ -9,6 +9,8 @@
 6. Successfully replaced RestTemplate with OpenFeign
 7. Config server set up
 8. API Gateway is set up
+9. Done with Rabbit MQ (Asynchronous Communication)
+    
 
 
 <img width="1018" height="532" alt="aycj7qut" src="https://github.com/user-attachments/assets/e9fba1de-549f-4e72-8c1c-2f325df36d16" />
