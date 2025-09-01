@@ -10,6 +10,7 @@
 7. Config server set up
 8. API Gateway is set up
 9. Done with Rabbit MQ (Asynchronous Communication)
+10. Containerization of microservices is done
     
 
 
